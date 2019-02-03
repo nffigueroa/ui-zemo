@@ -1,0 +1,8 @@
+.header{
+    position: relative;
+    svg{
+        position: absolute;
+        z-index: -1;
+        cursor: default;
+    }
+}

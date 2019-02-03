@@ -1,0 +1,9 @@
+.title-square{
+    &__text{
+        &--normal{
+            font-family: Lato-Regular;
+            font-size: 45px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

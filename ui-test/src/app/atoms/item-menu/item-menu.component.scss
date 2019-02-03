@@ -1,0 +1,10 @@
+.item-menu{
+    &__text{
+        margin: 5px 5px 0;
+        &--normal{
+            font-family: Lato-Light;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<div class="menu">
+  <div class="menu__hamburger" (click)="changeHeigth()">
+    <div class="menu__hamburger--icon"></div>
+    <div class="menu__hamburger--icon"></div>
+    <div class="menu__hamburger--icon"></div>
+  </div>
+  <div class="menu__slogan">
+    <app-slogan [text]="'Rule of thumb.'"></app-slogan>
+  </div>
+  <div class="menu__tri" *ngIf="heigthList"></div>
+  <div class="menu__item" [style.height]="heigthList + 'px'">
+    <div class="menu__item--component" *ngFor="let item of items" >
+      <app-item-menu [text]="item.text" *ngIf="heigthList" ></app-item-menu>
+    </div>
+  </div>
+</div>

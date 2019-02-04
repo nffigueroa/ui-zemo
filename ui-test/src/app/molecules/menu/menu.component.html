@@ -1,4 +1,5 @@
 <div class="menu">
+  <div class="menu__over"></div>
   <div class="menu__hamburger" (click)="changeHeigth()">
     <div class="menu__hamburger--icon"></div>
     <div class="menu__hamburger--icon"></div>
@@ -9,8 +10,12 @@
   </div>
   <div class="menu__tri" *ngIf="heigthList"></div>
   <div class="menu__item" [style.height]="heigthList + 'px'">
-    <div class="menu__item--component" *ngFor="let item of items" >
-      <app-item-menu [text]="item.text" *ngIf="heigthList" ></app-item-menu>
+    <div class="menu__item--component" *ngFor="let item of items" [style.display]="heigthList ? 'block' : 'none'">
+      <app-item-menu [text]="item.text" *ngIf="heigthList || widthScreen() > 767" ></app-item-menu>
     </div>
+    <div class="menu__icon">
+        <img src="../../../assets/img/search-icon.svg" >
+      </div>
   </div>
+  
 </div>

@@ -27,4 +27,8 @@ export class MenuComponent implements OnInit {
     this.heigthList = Number(this.heigthList) > 0 ? 0 : 80;
   }
 
+  widthScreen() {
+    return document.documentElement.clientWidth	;
+  }
+
 }

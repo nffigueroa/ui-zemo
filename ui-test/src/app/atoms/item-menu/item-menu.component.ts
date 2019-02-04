@@ -12,4 +12,8 @@ export class ItemMenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  redirect(title) {
+    window.open('', '_blank').document.title = title;
+  }
+
 }

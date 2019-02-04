@@ -1,27 +1,42 @@
-# UiTest
+#Development
+In this projet atomic design was implemented, so i have organis , molecule and atom folder. This is it because in the design i saw many components taht can be reusables, and the maintainability is better due the organization of the components, also i used scss as my css preprocessator and i applied the BEM pattern for the css code. In the start-square component (Organism) i have the JSON config for the items like that.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+config = [
+    {
+      nameStar: 'Malala',
+      name: 'Malala Yousafzai',
+      description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+      timeAgo: '1 Month',
+      where: 'Entertainment',
+      statusVotation: true // true if the positive votation is higher thant the negative votes
+    },
+    {
+      nameStar: 'Kanye',
+      name: 'Kanye Wets',
+      description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+      timeAgo: '1 Month',
+      where: 'Entertainment',
+      statusVotation: true
+    },
+    {
+      nameStar: 'Mark',
+      name: 'Mark Zuckerbeg',
+      description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+      timeAgo: '1 Month',
+      where: 'Business',
+      statusVotation: true
+    },
+    {
+      nameStar: 'Cristina',
+      name: 'Cristina Fernández de Kirchner',
+      description: 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.',
+      timeAgo: '1 Month',
+      where: 'politics',
+      statusVotation: true
+    }
+  ];
 
-## Development server
+  All the information about the stars are nested here. The other components have inputs for parametrization.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  PD: In tablet and mobile breakpoint the page has to be realoded because i used a validation of the width of the page for hidding the items menu.

@@ -1,0 +1,50 @@
+.labels{
+    &__title-one{
+        &--normal{
+            opacity: 0.74;
+            font-family: Lato-Light;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.74);
+        }
+    }
+    &__title-main{
+        &--normal{
+            font-family: Lato-Regular;
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__description {
+        &--normal{
+            font-family: Lato-Light;
+            font-size: 21px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__more-info{
+        &--normal{
+            font-family: Lato-Light;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__disclaimer{
+        &--normal{
+            font-family: Lato-Bold;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__disclaimer-right{
+        &--bold{
+            font-family: Lato-Bold;
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+        }
+        &--regular{
+            font-family: Lato-Regular;
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<div class="square" >
+  <img [src]="'../../../assets/img/'+ nameStar +'.png'" class="img-bg">
+  <div [class]="getClass()">
+      <img src="../../../assets/img/thumb-up.svg" width="18px" height="18px">
+  </div>
+  <div class="square__title">
+    <app-title-square [text]="config.name"></app-title-square>
+  </div>
+  <div class="square__subtitle">
+    <app-subtitle-square [text]="config.description"></app-subtitle-square>
+  </div>
+  <div class="square__over"></div>
+  <div class="square__button">
+    <app-button-square [kindOf]="'WHITE'" [text]="'View Full Report'"></app-button-square>
+  </div>
+  <div class="square__chart">
+    <app-char-rectangule [name]="config.nameStar" (vote)="setIcon($event)"></app-char-rectangule>
+  </div>
+  <div class="disclaimer">
+    <div class="disclaimer__bold">
+      <app-labels [kindOf]="'disclaimer-right-bold'" [text]="config.timeAgo + ' ago'"></app-labels>
+    </div>
+    <div class="disclaimer__regular">
+      <app-labels [kindOf]="'disclaimer-right-regular'" [text]="'In '+ config.where"></app-labels>
+    </div>
+  </div>
+
+</div>

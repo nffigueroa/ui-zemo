@@ -1,0 +1,10 @@
+<div class="organism-square">
+    <div class="organism-square__title">
+        <label for="title" class="organism-square__title--normal">
+                Previous Rulings
+        </label>
+    </div>
+    <div class="organism-square__component">
+            <app-info-star-square [conf]="item" *ngFor="let item of config"></app-info-star-square>
+    </div>
+</div>

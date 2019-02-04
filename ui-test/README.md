@@ -37,7 +37,7 @@ config = [
     }
   ];
 ```
-# Comans
+# Commands
 ```
 ng serve
 ng test

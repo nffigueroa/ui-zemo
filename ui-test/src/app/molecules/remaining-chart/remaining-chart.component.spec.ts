@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RemainingChartComponent } from './remaining-chart.component';
+import { AtomsModule } from '../../atoms/atoms.module';
 
 describe('RemainingChartComponent', () => {
   let component: RemainingChartComponent;
@@ -8,7 +9,10 @@ describe('RemainingChartComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RemainingChartComponent ]
+      declarations: [ RemainingChartComponent ],
+      imports: [
+        AtomsModule
+      ]
     })
     .compileComponents();
   }));

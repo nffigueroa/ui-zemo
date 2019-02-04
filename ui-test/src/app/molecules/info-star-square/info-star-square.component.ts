@@ -17,7 +17,7 @@ export class InfoStarSquareComponent implements OnInit {
   @Input()
 set conf(config: any) {
   this.config = config;
-  this.nameStar = config.nameStar;
+  this.nameStar = this.config.nameStar;
   this.setIcon(null);
 }
   constructor(private sanitizer: DomSanitizer) {

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AdBlockComponent } from './ad-block.component';
+import { MoleculesModule } from '../../molecules/molecules.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AdBlockComponent', () => {
   let component: AdBlockComponent;
@@ -8,7 +10,13 @@ describe('AdBlockComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdBlockComponent ]
+      declarations: [ AdBlockComponent ],
+      imports: [
+        MoleculesModule
+      ],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ]
     })
     .compileComponents();
   }));

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InfoStarSquareComponent } from './info-star-square.component';
+import { AtomsModule } from '../../atoms/atoms.module';
 
 describe('InfoStarSquareComponent', () => {
   let component: InfoStarSquareComponent;
@@ -8,7 +9,10 @@ describe('InfoStarSquareComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InfoStarSquareComponent ]
+      declarations: [ InfoStarSquareComponent ],
+      imports: [
+        AtomsModule
+      ]
     })
     .compileComponents();
   }));
@@ -17,9 +21,14 @@ describe('InfoStarSquareComponent', () => {
     fixture = TestBed.createComponent(InfoStarSquareComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    component.config = {
+      name: 'tx',
+      nameStar: 'Malal',
+      description: 'Algo'
+    };
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  // it('should create', () => {
+  //   expect(component.conf({name: 'Algo'}));
+  // });
 });

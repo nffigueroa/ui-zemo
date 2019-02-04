@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StarSquareComponent } from './star-square.component';
+import { MoleculesModule } from '../../molecules/molecules.module';
 
 describe('StarSquareComponent', () => {
   let component: StarSquareComponent;
@@ -8,7 +9,10 @@ describe('StarSquareComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StarSquareComponent ]
+      declarations: [ StarSquareComponent ],
+      imports: [
+        MoleculesModule
+      ]
     })
     .compileComponents();
   }));

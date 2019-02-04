@@ -37,6 +37,12 @@ config = [
     }
   ];
 ```
+# Comans
+```
+ng serve
+ng test
+
+```
   All the information about the stars are nested here. The other components have inputs for parametrization.
 
 

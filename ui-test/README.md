@@ -1,6 +1,7 @@
 # Development
 In this projet atomic design was implemented, so i have organis , molecule and atom folder. This is it because in the design i saw many components taht can be reusables, and the maintainability is better due the organization of the components, also i used scss as my css preprocessator and i applied the BEM pattern for the css code. In the start-square component (Organism) i have the JSON config for the items like that.
 
+```bash
 config = [
     {
       nameStar: 'Malala',
@@ -35,7 +36,7 @@ config = [
       statusVotation: true
     }
   ];
-
+```
   All the information about the stars are nested here. The other components have inputs for parametrization.
 
 

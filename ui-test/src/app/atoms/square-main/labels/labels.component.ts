@@ -12,7 +12,6 @@ export class LabelsComponent implements OnInit {
   txt: string;
   @Input() set kindOf (t: string) {
     this.type = t;
-    console.log('Entro');
     switch (this.type) {
       case 'title-one':
         this.divLabel.nativeElement.classList.add('labels__title-one');

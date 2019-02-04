@@ -49,6 +49,12 @@ export class CharRectanguleComponent implements OnInit {
   calcPercent() {
     this.positiveVotes = Number(sessionStorage.getItem(`positiveVotes${this.nameStar}`));
     this.negativeVotes = Number(sessionStorage.getItem(`negativeVotes${this.nameStar}`));
+    if (!this.negativeVotes) {
+      this.negativeVotes = 1;
+    }
+    if (!this.positiveVotes) {
+      this.positiveVotes = 1;
+    }
     this.positivePercent = Math.round((this.positiveVotes * 100) / (this.positiveVotes + this.negativeVotes));
     this.negativePercent = Math.round((this.negativeVotes * 100) / (this.positiveVotes + this.negativeVotes));
   }
